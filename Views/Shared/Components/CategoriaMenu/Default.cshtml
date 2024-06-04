@@ -1,0 +1,13 @@
+﻿<ul>
+    <li class="dropdown">
+        <a href="#"><span>Lanches</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+        <ul>
+            @foreach (var categoria in Model)
+            {
+                <li>
+                    <a class="dropdown-item" asp-controller="Lanche" asp-action="List"
+                       asp-route-categoria="@categoria.CategoriaNome">@categoria.CategoriaNome</a>
+                </li>
+            }   
+        </ul>
+</ul>

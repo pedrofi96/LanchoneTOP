@@ -1,0 +1,51 @@
+﻿@model IEnumerable<LanchoneTOP.Models.Categoria>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center">Categorias</h1>
+
+<p>
+    <a asp-action="Create">
+        <button type="button" class="btn btn-outline-primary">Criar Nova Categoria</button>
+    </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoriaNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoriaNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+               <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <a asp-action="Edit" asp-route-id="@item.CategoriaId">
+                        <button type="button" class="btn btn-outline-primary">Editar</button>
+                    </a>
+                    <a asp-action="Details" asp-route-id="@item.CategoriaId">
+                        <button type="button" class="btn btn-outline-primary">Detalhes</button>
+                    </a>
+                    <a asp-action="Delete" asp-route-id="@item.CategoriaId">
+                        <button type="button" class="btn btn-outline-danger">Deletar</button>
+                    </a>
+                </div>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
