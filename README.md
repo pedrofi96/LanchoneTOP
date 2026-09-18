@@ -1,7 +1,7 @@
 
 # Projeto FullStack
 
-Projeto mais completo que criei, projeto de um comercio eletronico 100% funcional, usando padrão de arquitetura MVC (Model View Controller), projeto criado usando para o BackEnd: C#;.Net; Asp.NetCore; Identity Framework; usando migrations com SQL Server. E para o FrontEnd foi-se usado: JavaScript; HTML5; CSS3; BootStrap5; 
+Projeto de conclusão do curso Senai/Cimatec. Projeto de um comercio eletronico 100% funcional, usando padrão de arquitetura MVC (Model View Controller), projeto criado usando para o BackEnd: C#;.Net; Asp.NetCore; Identity Framework; usando migrations com SQL Server. E para o FrontEnd foi-se usado: JavaScript; HTML5; CSS3; BootStrap5; 
 
 
 Foi criado páginas diferenciadas para usuários administradores e usuários normais, 
